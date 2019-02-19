@@ -45,7 +45,7 @@ nav.navbar.bootsnav{
     -webkit-border-radius: 0px;
     -o-border-radius: 0px;
     border-radius: 0px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     border: none;
     border-bottom: solid 1px #e0e0e0;
     z-index: 9;
@@ -54,6 +54,10 @@ nav.navbar.bootsnav{
 nav.navbar.bootsnav ul.nav > li > a{
     color: #ccc;
     background-color: transparent !important;
+}
+
+nav.navbar.bootsnav ul.nav > li > a:hover{
+    color: #fff;
 }
 
 nav.navbar.bootsnav ul.nav li.megamenu-fw > a:hover,
