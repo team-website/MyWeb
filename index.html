@@ -88,8 +88,23 @@
         <link rel="stylesheet" href="assets/css/bootstrap.css">
         <link rel="stylesheet" href="assets/css/magnific-popup.css">
         <link rel="stylesheet" href="assets/css/bootsnav.css">
+	   <script type="text/javascript">
+ // makes sure the whole site is loaded
+    jQuery(window).load(function () {
+        "use strict";
+        // will first fade out the loading animation
+ if(  jQuery( '.et-bfb' ).length <= 0 && jQuery( '.et-fb' ).length <= 0  ){ 
+ jQuery(".status").fadeOut();
+ // will fade out the whole DIV that covers the website.
+ jQuery(".preloader").delay(1000).fadeOut("slow");
+ }else{
+ jQuery(".preloader").css('display','none');
+ }
+    }); 
+</script>  
 
- <!--For Plugins external css-->
+
+        <!--For Plugins external css-->
         <!--<link rel="stylesheet" href="assets/css/plugins.css" />-->
 
         <!--Theme custom css -->
@@ -207,24 +222,9 @@ end nav style */
 </style>
 
         <!-- Preloader -->
-   <div id="loading">
-            <div id="loading-center">
-                <div id="loading-center-absolute">
-                    <div class="object"></div>
-		<div class="object"></div>
-                    <div class="object"></div>
-                    <div class="object"></div>
-                    <div class="object"></div>
-                    <div class="object"></div>
-                    <div class="object"></div>
-                    <div class="object"></div>
-                    <div class="object"></div>
-                    <div class="object"></div>
-                   
-                </div>
-            </div>
-        </div>
-                <div class="culmn">
+<div class="preloader">
+<div class="status"></div>
+</div>
         <!--End off Preloader -->
        
 
@@ -285,12 +285,12 @@ end nav style */
                     <div class="row">
                         <div class="main_home text-center">
                             <div class="home_text">
-                                <h4 class="text-white text-uppercase">Creative Design Develop</h4>
-                                <h2 class="text-white text-uppercase">Beyond the expectation - we will make it possible</h2>
+                                <h6 class="text-white text-uppercase">Creative Design Develop</h6>
+                                <h2 class="text-white text-uppercase">Beyond the expectation - we will make it possible</h6>
 
                                 <div class="separator"></div>
 
-                                <h5 class=" text-uppercase text-white"><em>One day, the dream will come true with lorem ipsum dolor sit amet, 
+                                <h6 class=" text-uppercase text-white"><em>One day, the dream will come true with lorem ipsum dolor sit amet, 
                                         consectetuer adipiscing elit, nummy nibh euismod tincidunt laoreet.</em></h5>
                             </div>
                         </div>
