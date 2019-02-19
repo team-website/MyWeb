@@ -88,23 +88,8 @@
         <link rel="stylesheet" href="assets/css/bootstrap.css">
         <link rel="stylesheet" href="assets/css/magnific-popup.css">
         <link rel="stylesheet" href="assets/css/bootsnav.css">
-	   <script type="text/javascript">
- // makes sure the whole site is loaded
-    jQuery(window).load(function () {
-        "use strict";
-        // will first fade out the loading animation
- if(  jQuery( '.et-bfb' ).length <= 0 && jQuery( '.et-fb' ).length <= 0  ){ 
- jQuery(".status").fadeOut();
- // will fade out the whole DIV that covers the website.
- jQuery(".preloader").delay(1000).fadeOut("slow");
- }else{
- jQuery(".preloader").css('display','none');
- }
-    }); 
-</script>  
 
-
-        <!--For Plugins external css-->
+ <!--For Plugins external css-->
         <!--<link rel="stylesheet" href="assets/css/plugins.css" />-->
 
         <!--Theme custom css -->
@@ -222,9 +207,24 @@ end nav style */
 </style>
 
         <!-- Preloader -->
-<div class="preloader">
-<div class="status"></div>
-</div>
+   <div id="loading">
+            <div id="loading-center">
+                <div id="loading-center-absolute">
+                    <div class="object"></div>
+		<div class="object"></div>
+                    <div class="object"></div>
+                    <div class="object"></div>
+                    <div class="object"></div>
+                    <div class="object"></div>
+                    <div class="object"></div>
+                    <div class="object"></div>
+                    <div class="object"></div>
+                    <div class="object"></div>
+                   
+                </div>
+            </div>
+        </div>
+                <div class="culmn">
         <!--End off Preloader -->
        
 
