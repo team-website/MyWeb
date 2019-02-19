@@ -37,7 +37,7 @@ body {
     margin-right: 0;
     font-weight: 400;
     width:100%;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'KNUNormal','Roboto Condensed', sans-serif,;
 }
 
 /*------------------------------------------------------------------*/
@@ -220,7 +220,7 @@ h4,
 h5,
 h6 {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'KNUNormal','Montserrat', sans-serif;
     color:#1a1a1a;
     margin-bottom: 10px;
 }
@@ -243,7 +243,7 @@ h4 {
 }
 h5 {
     font-size: 18px;
-    font-family: 'Crimson Text', serif;
+    font-family: 'KNUNormal','Crimson Text', serif;
     font-weight: 400;
 }
 h6 {
@@ -679,48 +679,48 @@ input[type="email"].form-control::-webkit-input-placeholder {
 
 input::-webkit-input-placeholder {
     color: #cdcdcd;
-    font-style:italic;
+    font-style:'KNUNormal',italic;
 }
 
 input::-moz-placeholder {
     color: #cdcdcd;
-    font-style:italic;
+    font-style:'KNUNormal','italic;
 }
 
 input:-ms-input-placeholder {
     color: #cdcdcd;
-    font-style:italic;
+    font-style:'KNUNormal',italic;
 }
 
 input::placeholder {
     color: #cdcdcd;
-    font-style:italic;
+    font-style:'KNUNormal',italic;
 }
 input::-webkit-input-placeholder {
     color: #cdcdcd;
-    font-style:italic;
+    font-style:'KNUNormal',italic;
 }
 input::-moz-placeholder {
     color: #cdcdcd;
-    font-style:italic;
+    font-style:'KNUNormal',italic;
 }
 input::-ms-input-placeholder {
     color: #cdcdcd;
-    font-style:italic;
+    font-style:'KNUNormal',italic;
 }
 textarea::-webkit-input-placeholder{
     color: #cdcdcd;
-    font-style:italic;
+    font-style:'KNUNormal',italic;
     padding: 5px;
 }
 textarea::-moz-input-placeholder{
     color: #cdcdcd;
-    font-style:italic;
+    font-style:'KNUNormal',italic;
     padding: 5px;
 }
 textarea::-ms-input-placeholder{
     color: #cdcdcd;
-    font-style:italic;
+    font-style:'KNUNormal',italic;
     padding: 5px;
 }
 
@@ -758,7 +758,7 @@ textarea::-ms-input-placeholder{
     color:#1a1a1a;
 }
 .head_title p{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'KNUNormal','Raleway', sans-serif;
     font-weight: 400;
     font-size:1rem;
     color:#4a4a4a;
@@ -768,100 +768,32 @@ textarea::-ms-input-placeholder{
 
 
 /*Preloader css*/
-#loading{
-    background-color: #ee997b;
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    margin-top: 0px;
-    top: 0px;
-    z-index: 90;
+preloader {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: #fefefe;
+   z-index: 100000;
+   height: 100%;
+   width: 100%;
+   overflow: hidden !important;
 }
-#loading-center{
-    width: 100%;
-    height: 100%;
-    position: relative;
+.preloader .status {
+   width: 100px;
+   height: 100px;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   background-image: url(assets/img/loading.gif);
+   background-repeat: no-repeat;
+   background-position: center;
+   -webkit-background-size: cover;
+   background-size: cover;
+   margin: -50px 0 0 -50px;
 }
-#loading-center-absolute {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    height: 50px;
-    width: 150px;
-    margin-top: -25px;
-    margin-left: -75px;
-}
-.object{
-    width: 8px;
-    height: 50px;
-    margin-right:5px;
-    background-color: #FFF;
-    -webkit-animation: animate 1s infinite;
-    animation: animate 1s infinite;
-    float: left;
-}
-
-.object:last-child {
-    margin-right: 0px;
-}
-
-.object:nth-child(10){
-    -webkit-animation-delay: 0.9s;
-    animation-delay: 0.9s;	
-}
-.object:nth-child(9){
-    -webkit-animation-delay: 0.8s;
-    animation-delay: 0.8s;	
-}	
-.object:nth-child(8){
-    -webkit-animation-delay: 0.7s;
-    animation-delay: 0.7s;	
-}
-.object:nth-child(7){
-    -webkit-animation-delay: 0.6s;
-    animation-delay: 0.6s;	
-}
-.object:nth-child(6){
-    -webkit-animation-delay: 0.5s;
-    animation-delay: 0.5s;	
-}
-.object:nth-child(5){
-    -webkit-animation-delay: 0.4s;
-    animation-delay: 0.4s;
-}
-.object:nth-child(4){
-    -webkit-animation-delay: 0.3s;
-    animation-delay: 0.3s;		
-}
-.object:nth-child(3){
-    -webkit-animation-delay: 0.2s;
-    animation-delay: 0.2s;	
-}
-.object:nth-child(2){
-    -webkit-animation-delay: 0.1s;
-    animation-delay: 0.1s;
-}						
-
-@-webkit-keyframes animate {
-
-    50% {
-        -ms-transform: translateX(-25px) scaleY(0.5); 
-        -webkit-transform: translateX(-25px) scaleY(0.5);
-        transform: translateX(-25px) scaleY(0.5);
-
-    }
-
-}
-
-@keyframes animate {
-    50% {
-        -ms-transform: translateX(-25px) scaleY(0.5); 
-        -webkit-transform: translateX(-25px) scaleY(0.5);
-        transform: translateX(-25px) scaleY(0.5);
-    }
-
-}
+ 
 
 /*End off Preloader*/
 
@@ -943,7 +875,7 @@ Home Section style
     z-index: 1;
 }
 .home_text h1{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'KNUNormal','Raleway', sans-serif;
     font-size:4.286rem;
     font-weight: 700;
     line-height: 6.5rem;
@@ -985,9 +917,9 @@ About section style
 
 
 .counter_item h2{
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'KNUNormal','Roboto Condensed', sans-serif;
     font-size:60px;
-    font-style: italic;
+    font-style: 'KNUNormal',italic;
 
 }
 .counter_item h5{}
@@ -1049,7 +981,7 @@ About section style
     border: none;
     border-radius: 0px;
     color: #000;
-    font-family: sans-serif;
+    font-family:'KNUNormal', sans-serif;
     font-size: 14px;
     outline: none;
     border-bottom: 1px dotted #333;
