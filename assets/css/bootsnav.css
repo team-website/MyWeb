@@ -65,7 +65,7 @@ nav.navbar.bootsnav ul.nav li.active > a{
 }
 
 nav.navbar.bootsnav .navbar-toggle{
-    background-color: #fff !important;
+    background-color: rgba(0, 0, 0, 0.34) !important;
     border: none;
     padding: 0;
     font-size: 18px;
@@ -145,7 +145,7 @@ nav.bootsnav.navbar-full .navbar-collapse .nav-full{
 nav.bootsnav.navbar-full .navbar-collapse .wrap-full-menu{
     display: table-cell;
     vertical-align: middle;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.37);
     overflow: auto;
 }
 
