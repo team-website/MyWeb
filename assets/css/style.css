@@ -911,7 +911,7 @@ Nav Menu style
     position: relative;
 }
 .home{
-    background: url(../images/background/homepage-bg.jpg) no-repeat top center;
+    background: url(../images/background/light.mp4) repeat-y top center;
 }
 .service-banner{
     background: url(../images/background/services-bg.jpg) no-repeat bottom center;
